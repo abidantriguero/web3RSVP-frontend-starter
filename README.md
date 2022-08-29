@@ -1,21 +1,22 @@
 # Web3RSVP-frontend
 
-### Fork and clone the repo from Github to work with it locally
+## A full-stack event platform web3 application.
 
-1. Click the "Fork" button
+If you have the SmartContract , you can query the SubGraph for the event data using an Apollo client application and display this data on the front-end with React.
 
-2. In your account's forked github repo, click the "Code" button and copy the repo link.
+### FEATURES:
+##### Added features that allow users to:
 
-3. Open your terminal.
+- Create Events
+- Confirm your attendance at the event
+- View upcoming and past events.
 
-4. CD into the repo 
+##### REPO:
 
-5. Install dependencies `npm i`
+Smart Contract: [web3rsvp] (https://github.com/abidantriguero/web3rsvp)
 
-6. Run the development server
+Polygonscan Mumbai Verify: [0x6fBe905d5339A7C7Ea4F62D48a311978c17B218d] (https://mumbai.polygonscan.com/address/0x6fBe905d5339A7C7Ea4F62D48a311978c17B218d#code)
 
-```bash
-npm run dev
-```
+Subgraph: [web3rsvp-subgraph] (https://github.com/abidantriguero/web3rsvp-subgraph)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
