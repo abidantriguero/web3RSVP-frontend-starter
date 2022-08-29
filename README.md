@@ -13,7 +13,7 @@ If you have the SmartContract , you can query the SubGraph for the event data us
 
 ##### REPO:
 
-Smart Contract: [web3rsvp] (https://github.com/abidantriguero/web3rsvp) -   Github
+Smart Contract: [web3rsvp](https://github.com/abidantriguero/web3rsvp) -   Github
 
 Polygonscan Mumbai Verify: [0x6fBe905d5339A7C7Ea4F62D48a311978c17B218d] (https://mumbai.polygonscan.com/address/0x6fBe905d5339A7C7Ea4F62D48a311978c17B218d#code)
 
