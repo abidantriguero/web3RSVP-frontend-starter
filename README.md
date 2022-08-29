@@ -2,7 +2,7 @@
 
 ## A full-stack event platform web3 application.
 
-If you have the SmartContract , you can query the SubGraph for the event data using an Apollo client application and display this data on the front-end with React.
+You have the SmartContract , you can query the SubGraph for the event data using an Apollo client application and display this data on the front-end with React.
 
 ### FEATURES:
 ##### Added features that allow users to:
