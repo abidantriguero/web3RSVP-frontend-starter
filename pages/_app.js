@@ -8,6 +8,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { ApolloProvider } from "@apollo/client";
 import client from "../apollo-client";
+import { ThemeProvider } from 'next-themes'
 
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID;
 
@@ -32,9 +33,11 @@ export default function MyApp({ Component, pageProps }) {
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <ApolloProvider client={client}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <ThemeProvider attribute="class">
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </ThemeProvider>
         </ApolloProvider>
       </RainbowKitProvider>
     </WagmiConfig>

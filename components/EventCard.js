@@ -4,7 +4,7 @@ import formatTimestamp from "../utils/formatTimestamp";
 
 export default function EventCard({ id, name, eventTimestamp, imageURL }) {
   return (
-    <div className="group relative clickable-card rounded-lg focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500">
+    <div className="group relative clickable-card rounded-lg focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 dark:focus:ring-gray-400 dark:focus-within:ring-offset-gray-0 dark:focus-within:ring-0 dark:focus-within:ring-offset-0">
       <Link href={`/event/${id}`}>
         <a className="clickable-card__link"></a>
       </Link>
@@ -14,7 +14,7 @@ export default function EventCard({ id, name, eventTimestamp, imageURL }) {
       <p className="mt-2 block text-sm text-gray-500">
         {formatTimestamp(eventTimestamp)}
       </p>
-      <p className="block text-base font-medium text-gray-900">{name}</p>
+      <p className="block text-base font-medium text-gray-900 dark:text-gray-300">{name}</p>
     </div>
   );
 }

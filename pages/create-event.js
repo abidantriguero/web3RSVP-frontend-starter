@@ -137,7 +137,7 @@ export default function CreateEvent() {
           />
         )}
         {!success && (
-          <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4">
+          <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4 dark:text-gray-300">
             Create your virtual event
           </h1>
         )}
@@ -150,7 +150,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="eventname"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-300"
                 >
                   Event name
                 </label>
@@ -159,7 +159,7 @@ export default function CreateEvent() {
                     id="event-name"
                     name="event-name"
                     type="text"
-                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
+                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                     required
                     value={eventName}
                     onChange={(e) => setEventName(e.target.value)}
@@ -170,10 +170,10 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="date"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-300"
                 >
                   Date & time
-                  <p className="mt-1 max-w-2xl text-sm text-gray-400">
+                  <p className="mt-1 max-w-2xl text-sm text-gray-400 dark:text-gray-500">
                     Your event date and time
                   </p>
                 </label>
@@ -183,7 +183,7 @@ export default function CreateEvent() {
                       id="date"
                       name="date"
                       type="date"
-                      className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                      className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                       required
                       value={eventDate}
                       onChange={(e) => setEventDate(e.target.value)}
@@ -194,7 +194,7 @@ export default function CreateEvent() {
                       id="time"
                       name="time"
                       type="time"
-                      className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                      className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                       required
                       value={eventTime}
                       onChange={(e) => setEventTime(e.target.value)}
@@ -206,10 +206,10 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="max-capacity"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-300"
                 >
                   Max capacity
-                  <p className="mt-1 max-w-2xl text-sm text-gray-400">
+                  <p className="mt-1 max-w-2xl text-sm text-gray-400 dark:text-gray-500">
                     Limit the number of spots available for your event.
                   </p>
                 </label>
@@ -220,7 +220,7 @@ export default function CreateEvent() {
                     id="max-capacity"
                     min="1"
                     placeholder="100"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                     value={maxCapacity}
                     onChange={(e) => setMaxCapacity(e.target.value)}
                   />
@@ -230,10 +230,10 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="refundable-deposit"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-300"
                 >
                   Refundable deposit
-                  <p className="mt-1 max-w-2xl text-sm text-gray-400">
+                  <p className="mt-1 max-w-2xl text-sm text-gray-400 dark:text-gray-500">
                     Require a refundable deposit (in MATIC) to reserve one spot
                     at your event
                   </p>
@@ -247,7 +247,7 @@ export default function CreateEvent() {
                     step="any"
                     inputMode="decimal"
                     placeholder="0.00"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                     value={refund}
                     onChange={(e) => setRefund(e.target.value)}
                   />
@@ -257,10 +257,10 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="event-link"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-300"
                 >
                   Event link
-                  <p className="mt-1 max-w-2xl text-sm text-gray-400">
+                  <p className="mt-1 max-w-2xl text-sm text-gray-400 dark:text-gray-500">
                     The link for your virtual event
                   </p>
                 </label>
@@ -269,7 +269,7 @@ export default function CreateEvent() {
                     id="event-link"
                     name="event-link"
                     type="text"
-                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
+                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                     required
                     value={eventLink}
                     onChange={(e) => setEventLink(e.target.value)}
@@ -279,10 +279,10 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="about"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-300"
                 >
                   Event description
-                  <p className="mt-2 text-sm text-gray-400">
+                  <p className="mt-2 text-sm text-gray-400 dark:text-gray-500">
                     Let people know what your event is about!
                   </p>
                 </label>
@@ -291,23 +291,23 @@ export default function CreateEvent() {
                     id="about"
                     name="about"
                     rows={10}
-                    className="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
+                    className="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md dark:bg-slate-400 dark:border-slate-600 dark:text-gray-800 dark:focus:ring-gray-400 dark:focus:ring-offset-0"
                     value={eventDescription}
                     onChange={(e) => setEventDescription(e.target.value)}
                   />
                 </div>
               </div>
             </div>
-            <div className="pt-5">
+            <div className="pt-5 dark:divide-slate-700">
               <div className="flex justify-end">
                 <Link href="/">
-                  <a className="bg-white py-2 px-4 border border-gray-300 rounded-full shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <a className="bg-white py-2 px-4 border border-gray-300 rounded-full shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-slate-400 dark:border-slate-600 dark:text-gray-700 dark:focus:ring-gray-400 dark:focus:ring-offset-0 dark:hover:bg-slate-400 dark:hover:text-indigo-600">
                     Cancel
                   </a>
                 </Link>
                 <button
                   type="submit"
-                  className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:text-gray-300"
                 >
                   Create
                 </button>
@@ -325,7 +325,7 @@ export default function CreateEvent() {
         )}
         {!account && (
           <section className="flex flex-col items-start py-8">
-            <p className="mb-4">Please connect your wallet to create events.</p>
+            <p className="mb-4 dark:text-gray-500">Please connect your wallet to create events.</p>
             <ConnectButton />
           </section>
         )}

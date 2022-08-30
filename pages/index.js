@@ -27,13 +27,13 @@ export default function Home() {
   if (loading)
     return (
       <Landing>
-        <p>Loading...</p>
+        <p className="dark:text-gray-400">Loading...</p>
       </Landing>
     );
   if (error)
     return (
       <Landing>
-        <p>`Error! ${error.message}`</p>
+        <p className="dark:text-gray-400">{`Error! ${error.message}`}</p>
       </Landing>
     );
 

@@ -20,7 +20,7 @@ export default function Navmenu({ account, disconnect }) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800  ">
           <div className="py-1">
             <Menu.Item>
               {({ account }) => (
@@ -28,7 +28,7 @@ export default function Navmenu({ account, disconnect }) {
                   href={`/my-rsvps/upcoming`}
                   className={joinClassNames(
                     account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
+                    "block px-4 py-2 text-sm dark:text-gray-400"
                   )}
                 >
                   My RSVPs
@@ -41,7 +41,7 @@ export default function Navmenu({ account, disconnect }) {
                   href={`/my-events/upcoming`}
                   className={joinClassNames(
                     account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
+                    "block px-4 py-2 text-sm dark:text-gray-400"
                   )}
                 >
                   My Events
@@ -54,7 +54,7 @@ export default function Navmenu({ account, disconnect }) {
                   onClick={disconnect}
                   className={joinClassNames(
                     account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm cursor-pointer"
+                    "block px-4 py-2 text-sm cursor-pointer dark:text-gray-400"
                   )}
                 >
                   Log Out
