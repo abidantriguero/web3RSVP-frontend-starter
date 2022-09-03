@@ -21,4 +21,4 @@ s
 
 - Subgraph: [web3rsvp-subgraph](https://github.com/abidantriguero/web3rsvp-subgraph) - Github
 
-- Open the [Dapp](https://web3-rsvp-abidan-triguero.vercel.app/) - with your browser to see and created your events.
+- Open [Dapp](https://web3-rsvp-abidan-triguero.vercel.app/) - with your browser to see and created your events.
